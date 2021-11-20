@@ -9,6 +9,9 @@ image:
   pullPolicy: IfNotPresent
 
 web:
+  # Set password.secretName if you want to set a web password
+  # password:
+  #   secretName: ""
   service:
     type: ClusterIP
     port: 51821
