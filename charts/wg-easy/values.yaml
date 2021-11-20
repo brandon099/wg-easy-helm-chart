@@ -16,11 +16,13 @@ web:
   service:
     type: ClusterIP
     port: 51821
+    externalTrafficPolicy: Local
 
 wireguard:
   service:
     type: ClusterIP
     port: 51820
+    externalTrafficPolicy: Local
 
   # Wireguard host is required and used when creating client config
   host: ""
