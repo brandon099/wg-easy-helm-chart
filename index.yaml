@@ -3,6 +3,16 @@ entries:
   wg-easy:
   - apiVersion: v2
     appVersion: "3"
+    created: "2021-11-20T21:23:26.74707801Z"
+    description: A wg-easy Wireguard server
+    digest: d9815790156e7177fd801c38f7cea010ccf9e5e5a74750290e6415166534ca5a
+    name: wg-easy
+    type: application
+    urls:
+    - https://github.com/brandon099/wg-easy-helm-chart/releases/download/wg-easy-0.1.6/wg-easy-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: "3"
     created: "2021-11-20T20:44:51.832521092Z"
     description: A wg-easy Wireguard server
     digest: c4b514f06a42766f08068f3be8c622206797dd9ea724fc8fb0b2cd4ebbc1e4f9
@@ -61,4 +71,4 @@ entries:
     urls:
     - https://github.com/brandon099/wg-easy-helm-chart/releases/download/wg-easy-0.1.0/wg-easy-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-20T20:44:51.832546393Z"
+generated: "2021-11-20T21:23:26.74711091Z"
