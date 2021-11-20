@@ -14,9 +14,12 @@ The following table lists the configurable parameters of the Wg-easy chart and t
 | `web.password` | When set, requires a password when logging in to the Web UI. | `""` |
 | `web.service.type` | Service Type to create for the wg-easy front-end service. | `"ClusterIP"` |
 | `web.service.port` | The TCP port of the wg-easy front-end for Wireguard. | `51821` |
+| `web.service.externalTrafficPolicy` | Wireguard Service externalTrafficPolicy | `Local` |
+| `web.service.loadBalancerIP` | Wireguard Service externalTrafficPolicy | `null` |
 | `wireguard.service.type` | Service Type to create for the Wireguard VPN service | `"ClusterIP"` |
 | `wireguard.service.port` | The UDP port for the Wireguard VPN service. | `51820` |
-| `wireguard.host` | The public hostname or IP address of your VPN server. | `""` |
+| `wireguard.service.externalTrafficPolicy` | Wireguard Service externalTrafficPolicy | `Local` |
+| `wireguard.host` | The public hostname or IP address of your VPN server. Required. | `""` |
 | `wireguard.clientAddrRange` | Client IP address range. | `"10.8.0.x"` |
 | `wireguard.dns` | DNS server clients will use. | `"1.1.1.1"` |
 | `wireguard.allowedIps` | Allowed IP's clients will use. | `"0.0.0.0/0, ::/0"` |
