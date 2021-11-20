@@ -30,7 +30,7 @@ wireguard:
   host: ""
   clientAddrRange: 10.8.0.x
   dns: 1.1.1.1
-  allowedIps: 0.0.0.0/0, ::/0
+  allowedIps: "0.0.0.0/0, ::/0"
   persistentKeepalive: 0
 
 imagePullSecrets: []
