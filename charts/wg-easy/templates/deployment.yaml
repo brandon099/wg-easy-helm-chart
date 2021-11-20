@@ -62,7 +62,7 @@ spec:
               value: "{{ .Values.wireguard.allowedIps }}"
             {{- end }}
             {{- if .Values.wireguard.persistentKeepalive }}
-            - name: WG_ALLOWED_IPS
+            - name: WG_PERSISTENT_KEEPALIVE
               value: "{{ .Values.wireguard.persistentKeepalive }}"
             {{- end }}
           volumeMounts:
