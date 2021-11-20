@@ -1,31 +1,14 @@
+# wg-easy Helm chart
 
-Wg-easy Helm Chart
-===========
+## Usage
 
-A [wg-easy](https://github.com/WeeJeWel/wg-easy) Wireguard server Helm Chart.
+[Helm](https://helm.sh) must be installed to use the chart.
+Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 
+Once Helm is set up properly, add the repo as follows:
 
-## Configuration
+```console
+helm repo add wg-easy https://brandon099.github.io/wg-easy-helm-chart
+```
 
-The following table lists the configurable parameters of the Wg-easy chart and their default values.
-
-| Parameter                | Description             | Default        |
-| ------------------------ | ----------------------- | -------------- |
-| `web.password` | When set, requires a password when logging in to the Web UI. | `""` |
-| `web.service.type` | Service Type to create for the wg-easy front-end service. | `"ClusterIP"` |
-| `web.service.port` | The TCP port of the wg-easy front-end for Wireguard. | `51821` |
-| `wireguard.service.type` | Service Type to create for the Wireguard VPN service | `"ClusterIP"` |
-| `wireguard.service.port` | The UDP port for the Wireguard VPN service. | `51820` |
-| `wireguard.host` | The public hostname or IP address of your VPN server. | `""` |
-| `wireguard.clientAddrRange` | Client IP address range. | `"10.8.0.x"` |
-| `wireguard.dns` | DNS server clients will use. | `"1.1.1.1"` |
-| `wireguard.allowedIps` | Allowed IP's clients will use. | `"0.0.0.0/0, ::/0"` |
-| `wireguard.persistentKeepalive` | Value in seconds to keep the "connection" open. | `0` |
-| `ingress.enabled` | Enable Ingress creation if true. | `false` |
-| `ingress.annotations` | Annotations to be applied to the Ingress object when Ingress is enabled. | `{}` |
-| `ingress.hosts` | Hostnames to use with Ingress, when enabled. | `[{"host": "chart-example.local", "paths": []}]` |
-| `persistence.enabled` | When set to true, this will enable persistence. | `false` |
-| `persistence.size` | Volume size when using persistence. | `"100Mi"` |
-| `persistence.annotations` | Persistent Volume Annotations | `{}` |
-| `persistence.accessModes` | Persistent Volume Access Mode | `["ReadWriteOnce"]` |
-| `persistence.subPath` | Persistent Volume sub-path | `""` |
+You can then run `helm search repo wg-easy` to see the chart and versions available to install.
