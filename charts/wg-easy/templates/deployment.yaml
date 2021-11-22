@@ -9,6 +9,8 @@ spec:
   selector:
     matchLabels:
       {{- include "wg-easy.selectorLabels" . | nindent 6 }}
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:

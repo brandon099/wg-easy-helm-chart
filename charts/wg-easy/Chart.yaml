@@ -3,6 +3,6 @@ name: wg-easy
 description: A wg-easy Wireguard server
 type: application
 # This is the chart version.
-version: 0.1.7
+version: 0.1.8
 # This is the version number of the application being deployed.
 appVersion: 3
