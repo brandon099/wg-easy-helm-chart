@@ -4,6 +4,6 @@ description: A wg-easy Wireguard server
 type: application
 icon: https://www.wireguard.com/img/wireguard.svg
 # This is the chart version.
-version: 0.1.8
+version: 0.1.9
 # This is the version number of the application being deployed.
 appVersion: 4
