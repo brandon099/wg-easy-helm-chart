@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: weejewel/wg-easy
-  tag: 4
+  tag: 5
   pullPolicy: IfNotPresent
 
 web:
