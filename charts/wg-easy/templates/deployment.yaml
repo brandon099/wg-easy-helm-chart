@@ -51,6 +51,10 @@ spec:
             - name: WG_PORT
               value: "{{ .Values.wireguard.service.port }}"
             {{- end }}
+            {{- if .Values.wireguard.mtu }}
+            - name: WG_MTU
+              value: "{{ .Values.wireguard.service.mtu }}"
+            {{- end }}
             {{- if .Values.wireguard.clientAddrRange }}
             - name: WG_DEFAULT_ADDRESS
               value: "{{ .Values.wireguard.clientAddrRange }}"
@@ -66,6 +70,14 @@ spec:
             {{- if .Values.wireguard.persistentKeepalive }}
             - name: WG_PERSISTENT_KEEPALIVE
               value: "{{ .Values.wireguard.persistentKeepalive }}"
+            {{- end }}
+            {{- if .Values.wireguard.postUp }}
+            - name: WG_POST_UP
+              value: "{{ .Values.wireguard.postUp }}"
+            {{- end }}
+            {{- if .Values.wireguard.postDown }}
+            - name: WG_POST_DOWN
+              value: "{{ .Values.wireguard.postDown }}"
             {{- end }}
           volumeMounts:
             - name: tun

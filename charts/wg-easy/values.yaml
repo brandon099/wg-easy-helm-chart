@@ -30,6 +30,11 @@ wireguard:
   dns: 1.1.1.1
   allowedIps: "0.0.0.0/0, ::/0"
   persistentKeepalive: 0
+  #mtu: 1420
+  #postUp: |-
+    # Put Wireguard post up commands here, here per line
+  #postDown: |-
+    # Put Wireguard post down commands here, here per line
 
 imagePullSecrets: []
 nameOverride: ""
