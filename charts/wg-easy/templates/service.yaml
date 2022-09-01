@@ -21,7 +21,7 @@ spec:
 {{- end }}
   ports:
     - port: {{ .Values.web.service.port }}
-      targetPort: {{ .Values.web.service.port }}
+      targetPort: {{ .Values.web.service.targetPort }}
       protocol: TCP
       name: http
   selector:
@@ -50,7 +50,7 @@ spec:
 {{- end }}
   ports:
     - port: {{ .Values.wireguard.service.port }}
-      targetPort: {{ .Values.wireguard.service.port }}
+      targetPort: {{ .Values.wireguard.service.targetPort }}
       protocol: UDP
       name: wireguard
   selector:

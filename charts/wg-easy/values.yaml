@@ -21,7 +21,10 @@ web:
 wireguard:
   service:
     type: ClusterIP
+    # Modify this port when wishing to change the service port systems connect to
     port: 51820
+    # This port value should likely not be changed since wg-easy iptables dport is hard coded to 51820
+    targetPort: 51280
     annotations: {}
 
   # Wireguard host is required and used when creating client config
