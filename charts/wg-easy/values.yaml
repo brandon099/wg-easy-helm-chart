@@ -15,7 +15,10 @@ web:
   #   secretName: ""
   service:
     type: ClusterIP
+    # Modify this port when wishing to change the web port the UI is accessible through
     port: 51821
+    # This port value should likely not be changed since wg-easy is hard coded to 51821
+    targetPort: 51821
     annotations: {}
 
 wireguard:
