@@ -3,6 +3,17 @@ entries:
   wg-easy:
   - apiVersion: v2
     appVersion: "5"
+    created: "2022-09-15T22:06:17.544832401Z"
+    description: A wg-easy Wireguard server
+    digest: 64bf8f72650482939a8b51a78266e6ad9f80a1a19ba661b577513702be39cf5b
+    icon: https://www.wireguard.com/img/wireguard.svg
+    name: wg-easy
+    type: application
+    urls:
+    - https://github.com/brandon099/wg-easy-helm-chart/releases/download/wg-easy-0.1.17/wg-easy-0.1.17.tgz
+    version: 0.1.17
+  - apiVersion: v2
+    appVersion: "5"
     created: "2022-09-01T06:00:02.887937124Z"
     description: A wg-easy Wireguard server
     digest: ffa228c60068e1f11d7d2dbcb29160b71ae712a8f58a1233e813daf3d845338b
@@ -179,4 +190,4 @@ entries:
     urls:
     - https://github.com/brandon099/wg-easy-helm-chart/releases/download/wg-easy-0.1.0/wg-easy-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-01T06:00:02.888076826Z"
+generated: "2022-09-15T22:06:17.545065913Z"
